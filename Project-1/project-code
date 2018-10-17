@@ -3,12 +3,22 @@
 		li$v0, 11
 		la $a0, 84 #T (84) 
 		syscall
-		addi $a0, $a0, 13 #a (97)
+		addi $a0, $a0 13 #a (97)
 		syscall 
 		addi $a0, $a0 7  #h (104)
 		syscall
 		addi $a0, $a0 2 #j (106)
 		syscall
 		li $v0, 10 #system call code for exit
+		syscall
+
+		li$v0, 11
+		la $a0, 67 #C (67)
+		syscall
+		addi la $a0, $a0 37 #h (104)
+		syscall
+		addi la $a0, $a0 1 #i (105)
+		syscall
+		addi la $a0, $a0 10 #s (115)
 		syscall
 
