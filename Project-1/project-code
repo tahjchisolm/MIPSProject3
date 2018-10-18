@@ -21,4 +21,12 @@
 		syscall
 		addi la $a0, $a0 10 #s (115)
 		syscall
+		sub la $a0, $a0 4 #o (110)
+		syscall
+		sub la $a0, $a0 2 #l (108)
+		syscall
+		addi la $a0, $a0 1 #m (109)
+		syscall
+		li $v0, 10 #system call code for exit
+		syscall
 
