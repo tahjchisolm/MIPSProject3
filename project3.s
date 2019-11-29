@@ -140,8 +140,8 @@ Bendloop2:
     li $t7, 0
     addi $t5, $t5, -4
 
-subprgC:
-    beq $t6, $t5, Cendloop1
+Bloop3:
+    beq $t6, $t5, Bendloop3
     lw $a1, 0($t6)
 
     sgt $t1, $a1, 64
@@ -178,7 +178,7 @@ subprgC:
     addi $t6, $t6, -4
     j subprgC
 
-Cendloop1:
+Bendloop3:
     li $t6, 1
     j Bfinish
 
