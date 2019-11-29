@@ -93,3 +93,10 @@ Aendloop:
     jal subprgB
     move $ra, $t9
     jr $ra
+
+subprgB:
+    addi $s6, $sp, 0
+
+    add $t2, $s5, $zero
+    addi $t3, $s6, -4
+    addi $t2, $t2, -4
