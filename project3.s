@@ -16,3 +16,8 @@ main:
     li $v0, 4
     la $a0, myMessage
     syscall # print myMessage
+
+    li $v0, 8
+    la $a0, input
+    li $a1, 1001
+    syscall # take input
