@@ -203,3 +203,11 @@ addNaN:
     syscall
     j back
 
+addInt:
+    li $v0, 1
+    move $a0, $t7
+    syscall
+    j back
+
+back:
+    jr $ra
