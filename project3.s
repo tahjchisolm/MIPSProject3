@@ -22,7 +22,7 @@ main:
     li $a1, 1001
     syscall # take input
 
-    addi $s2, $zero, 100
+    addi $s2, $zero, 0
     add $s3, $s2, $zero
 
 loop1:
@@ -194,7 +194,7 @@ pop:
     j pop
 
 endpop:
-    bew $t6, $zero, addNaN
+    beq $t6, $zero, addNaN
     j addInt
 
 addNaN:
