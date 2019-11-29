@@ -178,3 +178,11 @@ subprgC:
     addi $t6, $t6, -4
     j subprgC
 
+Cendloop1:
+    li $t6, 1
+    j Bfinish
+
+invalid:
+    add $t6, $zero, $zero
+    j Bfinish
+
