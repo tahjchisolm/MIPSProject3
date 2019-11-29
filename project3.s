@@ -21,3 +21,10 @@ main:
     la $a0, input
     li $a1, 1001
     syscall # take input
+
+    addi $s2, $zero, 100
+    add $s3, $s2, $zero
+
+loop1:
+    addi $t0, $zero, 1000
+    beq $s3, $t0, endloop1
