@@ -84,4 +84,7 @@ Aloop:
     j Aloop
 
 stop:
-
+    addi $sp, $sp, -4
+    sw $a1, 0($sp)
+    addi $t0, $t0, 4
+    j Aloop
