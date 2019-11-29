@@ -12,3 +12,7 @@ main:
     mfhi $t0 # store remainder
     addi $s0, $t0, 26 # base N
     addiu $s1, $s0, -10 # M
+
+    li $v0, 4
+    la $a0, myMessage
+    syscall # print myMessage
