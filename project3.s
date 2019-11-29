@@ -244,3 +244,9 @@ uppercase:
 number:
     addiu $a1, $a1, -48
     j findEx
+
+findEx:
+    li $t8, 0
+    li $v0, 1
+    slt $a3, $t8, $v1
+    beq $a3, $zero, done
