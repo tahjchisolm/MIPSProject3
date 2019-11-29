@@ -193,3 +193,7 @@ pop:
     addi $sp, $sp, 4
     j pop
 
+endpop:
+    bew $t6, $zero, addNaN
+    j addInt
+
