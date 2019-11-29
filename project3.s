@@ -240,3 +240,7 @@ lowercase:
 uppercase:
     addiu $a1, $a1, -55
     j findEx
+
+number:
+    addiu $a1, $a1, -48
+    j findEx
