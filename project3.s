@@ -197,3 +197,9 @@ endpop:
     bew $t6, $zero, addNaN
     j addInt
 
+addNaN:
+    li $v0, 4
+    la $a0, invalidMessage
+    syscall
+    j back
+
