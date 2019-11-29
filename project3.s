@@ -80,3 +80,8 @@ Aloop:
     la $a0, 44
     syscall
 
+    addi $t0, $t0, 4
+    j Aloop
+
+stop:
+
